@@ -11,7 +11,7 @@ const create = (req, res) => {
         if (error) {
             res.status(500).json({ message: error.message })
         }
-        res.status(201).json(colaboradora)
+        res.status(201).json(person)
     })
 }
 

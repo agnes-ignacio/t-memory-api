@@ -5,19 +5,8 @@ const SECRET = process.env.SECRET
 
 const getAllMemories = async (req, res) => {
     try {
-        const authHeader = req.get('authorization')
-
-        if (!authHeader) {
-            return res.status(401).json({ message: "Você precisa estar logado para editar um post!" })
-        }
-        const token = authHeader.split(" ")[1]
-        await jwt.verify(token, SECRET, async function (erro) {
-            if (erro) {
-                return res.status(403).send("erro de autentificação")
-            }
             const findMemories = await memoryModel.find({}, null, { sort: "date" })
             res.status(200).json(findMemories)
-        })
     } catch (error) {
         console.error(error)
         res.status(500).json({ message: error.message })
