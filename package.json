@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "engines": {
     "node": "12.11.1"
-    },
+  },
   "description": "Projeto final para o curso de back end da {Reprograma}. Trata-se de uma API que gera timelines para armazenar a história de pessoas trans e travestis.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:watch": "jest --watchAll",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
@@ -22,6 +23,10 @@
   },
   "homepage": "https://github.com/agnes-ignacio/t-memory-api#readme",
   "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "28.1.0",
     "nodemon": "^2.0.18"
   },
   "dependencies": {
