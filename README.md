@@ -10,19 +10,19 @@ Na T-MEMORY, dois tipos de conjunto de informações são armazenados: a unidade
 
 Como exemplo de estrutura de memória, podemos sugerir:
 
-> {
->     "title": "memoria2",
->     "date": "2021-07-01T17:36:41.544Z",
->     "description": "essa memória deve aparecer por segundo",
->     "category": "testes",
->     "timelineID": "62bf30a95bd3be0daadb34f3"
+> {<br>
+>     "title": "memoria2",<br>
+>     "date": "2021-07-01T17:36:41.544Z",<br>
+>     "description": "essa memória deve aparecer por segundo",<br>
+>     "category": "testes",<br>
+>     "timelineID": "62bf30a95bd3be0daadb34f3"<br>
 > }
 
 E como exemplo de estrutura de timeline:
 
-> [{
->     "title": "minha nova timeline",
->     "description": "uma timeline para testes"
+> [{<br>
+>     "title": "minha nova timeline",<br>
+>     "description": "uma timeline para testes"<br>
 > }]
 
 ## rotas
