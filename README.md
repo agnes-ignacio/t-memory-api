@@ -8,6 +8,23 @@ A T-MEMORY é uma iniciativa que acontece com essa finalidade: colocar em evidê
 
 Na T-MEMORY, dois tipos de conjunto de informações são armazenados: a unidade básica da aplicação, chamada de memória, que carrega informações sobre um acontecimento específico com relevância para a questão de gênero dissidência, e as timelines, que estruturam as memórias a partir de um assunto, organização, empresa, ONG, etc. Assim, é possível ver o desenvolvimento gradual e histórico dos eventos e de que forma é possível usar da lembrança para impulsionar mais iniciativas nesse sentido.
 
+Como exemplo de estrutura de memória, podemos sugerir:
+
+> {
+>     "title": "memoria2",
+>     "date": "2021-07-01T17:36:41.544Z",
+>     "description": "essa memória deve aparecer por segundo",
+>     "category": "testes",
+>     "timelineID": "62bf30a95bd3be0daadb34f3"
+> }
+
+E como exemplo de estrutura de timeline:
+
+> [{
+>     "title": "minha nova timeline",
+>     "description": "uma timeline para testes"
+> }]
+
 ## rotas
 
 A partir das requisições para a API, é possível:
