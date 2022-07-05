@@ -1,7 +1,9 @@
 ## introdução
 
 Olá, boas-vindas à documentação da T-MEMORY-API, meu projeto final para o curso de desenvolvimento backend da {Reprograma}. Trata-se de uma aplicação que serve para armazenar de forma cronológica as atividades, conquistas e acontecimentos de pessoas trans e travestis dentro de um contexto: seja uma empresa, uma ONG ou qualquer grupo de pessoas que tenha interesse em agrupar essas informações.
+
 Por muito tempo, a única memória cultivada no imaginário coletivo da figura da pessoa trans - em especial, das travestis - é diretamente associada à prostituição e à criminalidade e, ainda que a questão do trabalho sexual precise ser revista despida de moralidades e abordada como um trabalho como qualquer outro, é importante que construa-se história de pessoas trans e travestis exercendo outras atividades, para que sirva como exemplo para a sociedade em geral, mas principalmente para as próximas gerações gênero-dissidentes que precisam de outras referências.
+
 A T-MEMORY é uma iniciativa que acontece com essa finalidade: colocar em evidência que iniciativas e acontecimentos são importantes para a comunidade trans dentro das organizações e grupos de pessoas, para fins de análise, estímulo quanto a novas iniciativas nesse sentido e para que outras consigam se imaginar transitando nesses espaços que demonstram dar importância para a presença e reparação histórica de pessoas trans e travestis.
 	
 ## informações: memória e timeline
