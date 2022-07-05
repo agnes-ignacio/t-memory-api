@@ -5,7 +5,6 @@ const router = express.Router()
 
 router.get("/timelines", controller.getAllTimelines)
 router.get("/timeline/:id", controller.getTimelineById)
-router.get("/timelines/archived", controller.getAllArchivedTimelines)
 router.post("/timeline", controller.createNewTimeline)
 router.patch("/timeline/:id", controller.updateTimelineById)
 router.delete("/timeline/:id", controller.deleteTimelineById)

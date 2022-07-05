@@ -46,26 +46,6 @@ const getTimelineById = async (req, res) => {
     }
 }
 
-const getAllArchivedTimelines = async (req, res) => {
-    try {
-        const authHeader = req.get('authorization')
-
-        if (!authHeader) {
-            return res.status(401).json({ message: "Você precisa estar logado para editar um post!" })
-        }
-        const token = authHeader.split(" ")[1]
-        await jwt.verify(token, SECRET, async function (erro) {
-            if (erro) {
-                return res.status(403).send("erro de autentificação")
-            }
-            const findTimeline = await timelineModel.find({ archived: true })
-            res.status(200).json(findTimeline)
-        })
-    } catch (error) {
-        res.status(500).json({ message: error.message })
-    }
-}
-
 const createNewTimeline = async (req, res) => {
     try {
         const authHeader = req.get('authorization')
@@ -152,7 +132,6 @@ const deleteTimelineById = async (req, res) => {
 
 module.exports = {
     getAllTimelines,
-    getAllArchivedTimelines,
     getTimelineById,
     createNewTimeline,
     updateTimelineById,
