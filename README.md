@@ -159,7 +159,7 @@ A partir das requisições para a API, é possível:
 </tr>
 </table>
 
-A documentação também pode ser acessada [aqui](http://localhost:3030/minha-rota-de-documentacao/#/default/get_timeline__id_)
+A documentação também pode ser acessada [aqui](https://tmemory.herokuapp.com/minha-rota-de-documentacao/).
 
 ## banco de dados
 
