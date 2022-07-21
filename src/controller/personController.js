@@ -7,7 +7,7 @@ const create = (req, res) => {
     const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
     req.body.senha = senhaComHash
     const person = new personModel(req.body)
-    person.save(function (err) {
+    person.save(function (error) {
         if (error) {
             res.status(500).json({ message: error.message })
         }
