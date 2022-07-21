@@ -159,6 +159,8 @@ A partir das requisições para a API, é possível:
 </tr>
 </table>
 
+A documentação também pode ser acessada [aqui](http://localhost:3030/minha-rota-de-documentacao/#/default/get_timeline__id_)
+
 ## banco de dados
 
 Para esta aplicação, utilizei o MongoAtlas DB em conjunto com a dependência mongoose.
