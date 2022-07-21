@@ -59,105 +59,107 @@ A partir das requisições para a API, é possível:
 </tr>
 <tr>
   <td>get</td>
-  <td>/public/memories</td>
+  <td>"/public/memories"</td>
   <td>acessar todas as memórias públicas (não-arquivadas)</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/public/category</td>
+  <td>"/public/category"</td>
   <td>acessar as memórias públicas (não-arquivadas) por categoria</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/public/timeline/:id</td>
+  <td>"/public/timeline/:id"</td>
   <td>acessar as memórias públicas (não-arquivadas) por timeline</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/public/categoryandtimeline/:id</td>
+  <td>"/public/categoryandtimeline/:id"</td>
   <td>acessar as memórias públicas (não-arquivadas) por categoria e timeline</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/archived/category</td>
+  <td>"/archived/category"</td>
   <td>acessar as memórias arquivadas por categoria</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/archived/timeline/:id</td>
+  <td>"/archived/timeline/:id"</td>
   <td>acessar as memórias arquivadas por timeline</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/archived/categoryandtimeline/:id</td>
+  <td>"/archived/categoryandtimeline/:id"</td>
   <td>acessar as memórias arquivadas por categoria e timeline</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/timelines</td>
+  <td>"/timelines"</td>
   <td>acessar todas as timelines</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/timeline/:id</td>
+  <td>"/timeline/:id"</td>
   <td>acessar timeline por ID</td>
 </tr>
 <tr>
   <td>get</td>
-  <td>/people</td>
+  <td>"/people"</td>
   <td>acessar todas as pessoas usuárias</td>
 </tr>
 <tr>
   <td>post</td>
-  <td>/memory</td>
+  <td>"/memory"</td>
   <td>cria uma nova memória</td>
 </tr>
 <tr>
   <td>post</td>
-  <td>/timeline</td>
+  <td>"/timeline"</td>
   <td>cria uma nova timeline</td>
 </tr>
 <tr>
   <td>post</td>
-  <td>/person</td>
+  <td>"/person"</td>
   <td>cria uma nova pessoa usuária</td>
 </tr>
 <tr>
   <td>post</td>
-  <td>/person/login</td>
+  <td>"/person/login"</td>
   <td>efetua login de uma pessoa usuária</td>
 </tr>
 <tr>
   <td>patch</td>
-  <td>/memory/:id</td>
+  <td>"/memory/:id"</td>
   <td>atualiza memória por ID</td>
 </tr>
 <tr>
   <td>patch</td>
-  <td>/archive/:id</td>
+  <td>"/archive/:id"</td>
   <td>arquiva memória por ID</td>
 </tr>
 <tr>
   <td>patch</td>
-  <td>/timeline/:id</td>
+  <td>"/timeline/:id"</td>
   <td>atualiza timeline por ID</td>
 </tr>
 <tr>
   <td>delete</td>
-  <td>/memory/:id</td>
+  <td>"/memory/:id"</td>
   <td>exclui uma memória por ID</td>
 </tr>
 <tr>
   <td>delete</td>
-  <td>/timeline/:id</td>
+  <td>"/timeline/:id"</td>
   <td>exclui uma timeline por ID</td>
 </tr>
 <tr>
   <td>delete</td>
-  <td>/person/:id</td>
+  <td>"/person/:id"</td>
   <td>exclui uma pessoa usuária por ID</td>
 </tr>
 </table>
+
+A documentação também pode ser acessada [aqui](http://localhost:3030/minha-rota-de-documentacao/#/default/get_timeline__id_)
 
 ## banco de dados
 
