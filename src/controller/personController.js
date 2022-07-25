@@ -3,11 +3,11 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const SECRET = process.env.SECRET
 
-const create = (req, res) => {
+const create = async (req, res) => {
     const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
     req.body.senha = senhaComHash
     const person = new personModel(req.body)
-    person.save(function (error) {
+    await person.save(function (error) {
         if (error) {
             res.status(500).json({ message: error.message })
         }
@@ -15,8 +15,8 @@ const create = (req, res) => {
     })
 }
 
-const getAll = (req, res) => {
-    personModel.find(function (err, people) {
+const getAll = async (req, res) => {
+    await personModel.find(function (err, people) {
         if (err) {
             res.status(500).json({ message: err.message })
         }
@@ -35,8 +35,8 @@ const deleteById = async (req, res) => {
     }
 }
 
-const login = (req, res) => {
-    personModel.findOne({ email: req.body.email }, function (error, person) {
+const login = async (req, res) => {
+    await personModel.findOne({ email: req.body.email }, function (error, person) {
         if (!person) {
             return res.status(404).send("não existe colaboradora com este email!")
         }
