@@ -4,9 +4,9 @@ const jwt = require("jsonwebtoken")
 const SECRET = process.env.SECRET
 
 const create = (req, res) => {
-    const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
-    req.body.senha = senhaComHash
-    const person = new personModel(req.body)
+    const {nome, email, senha} = req.body
+    const senhaComHash = bcrypt.hashSync(senha, 10)
+    const person = new personModel({ nome, email, senhaComHash})
     person.save(function (error) {
         if (error) {
             res.status(500).json({ message: error.message })
