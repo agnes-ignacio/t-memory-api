@@ -63,7 +63,7 @@ const createNewTimeline = async (req, res) => {
             const newTimeline = new timelineModel({
                 title, description
             })
-            const savedTimeline = newTimeline.save()
+            const savedTimeline = await newTimeline.save()
             res.status(201).json({ message: "nova timeline criada com sucesso!", savedTimeline })
         })
     } catch (error) {
@@ -123,7 +123,7 @@ const deleteTimelineById = async (req, res) => {
             }
 
             await timelineModel.findByIdAndDelete(id)
-            res.status(200).json({ message: "post deletado com sucesso!" })
+            res.status(200).json({ message: "timeline deletada com sucesso!" })
         })
     } catch (error) {
         res.status(500).json({ message: error.message })
