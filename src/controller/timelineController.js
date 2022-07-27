@@ -95,7 +95,7 @@ const updateTimelineById = async (req, res) => {
             findTimeline.title = title || findTimeline.title
             findTimeline.description = description || findTimeline.description
 
-            const savedTimeline = findTimeline.save()
+            const savedTimeline = await findTimeline.save()
             res.status(200).json({ message: "timeline atualizada com sucesso!", savedTimeline })
         })
     } catch (error) {
