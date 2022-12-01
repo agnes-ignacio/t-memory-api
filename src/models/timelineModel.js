@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const timelineSchema = mongoose.Schema({
+const timelineSchema =  new mongoose.Schema({
     _id: {
         type: mongoose.Schema.Types.ObjectId,
         default: mongoose.Types.ObjectId

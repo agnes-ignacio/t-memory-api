@@ -50,7 +50,7 @@ const getMemoriesByTimeline = async (req, res) => {
                 return res.status(403).send("erro de autentificação")
             }
             const { timelineID } = req.params
-            const findTimeline = await timelineModel(timelineID)
+            const findTimeline = await timelineModel.findById(timelineID)
 
             if (findTimeline == null) {
                 return res.status(404).json({ message: "id inválido!" })
